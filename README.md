@@ -1,5 +1,41 @@
-🛠️ SQL2Struct – MySQL → Go Struct Generator (CLI)
+# 🛠️ SQLStruct — SQL → Go Struct Generator  
+Konversi otomatis *CREATE TABLE* menjadi struct Golang, lengkap dengan **warna**, **CLI interface**, dan **file picker interaktif**.
 
-SQL2Struct adalah sebuah CLI tool berbasis Golang yang secara otomatis mengonversi definisi tabel MySQL (CREATE TABLE ...) menjadi struct Golang yang rapi, bersih, dan siap pakai.
+![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![CLI](https://img.shields.io/badge/CLI-Tool-orange?style=for-the-badge)
 
-Tool ini dirancang untuk mempercepat proses pembuatan model layer pada aplikasi backend berbasis Go.
+---
+
+## ✨ Fitur Utama
+- ⚡ **Convert SQL → Go Struct** dari file SQL berisi `CREATE TABLE`
+- 🎨 **CLI berwarna** menggunakan `fatih/color`
+- 📁 **File Picker Interaktif** untuk memilih file SQL dengan daftar folder
+- 🔍 Auto-detect tipe SQL → tipe Golang
+- 🎯 Mendukung field menggunakan **backtick** atau tanpa backtick
+- 📦 Dibangun menggunakan **Cobra**
+
+---
+
+## 🎥 Demo Singkat
+
+```bash
+$ sqlstruct convert
+
+SQL File Path (press Enter to browse): ./sql/
+
+Choose file in ./sql
+> users.sql
+  roles.sql
+  logs.sql
+
+==== Generated Struct ====
+type Users struct {
+    Id        string `json:"id"`
+    FullName  string `json:"full_name"`
+    Email     string `json:"email"`
+    RoleId    string `json:"role_id"`
+    Password  string `json:"password"`
+    CreatedAt string `json:"created_at"`
+    UpdatedAt string `json:"updated_at"`
+}
