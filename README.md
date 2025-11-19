@@ -40,8 +40,18 @@ type Users struct {
     UpdatedAt string `json:"updated_at"`
 }
 
+-----
+
+
+## 📦 Instalasi
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-username/sqlstruct.git
+cd sqlstruct
 
 
 
----
+🚀 Cara Menjalankan
+./sqlstruct convert
 
