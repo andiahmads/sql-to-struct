@@ -22,7 +22,7 @@ Konversi otomatis *CREATE TABLE* menjadi struct Golang, lengkap dengan **warna**
 ```bash
 $ sqlstruct convert
 
-SQL File Path (press Enter to browse): ./sql/
+SQL File Path (press Enter to browse): ./your-migration-folder
 
 Choose file in ./sql
 > users.sql
