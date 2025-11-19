@@ -1,3 +1,22 @@
+## 📦 Instalasi
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-username/sqlstruct.git
+cd sqlstruct
+md
+Copy code
+### 2. Install Dependencies
+```bash
+go mod tidy
+3. Build Binary
+bash
+Copy code
+go build -o sqlstruct
+4. (Opsional) Install ke PATH
+bash
+Copy code
+sudo mv sqlstruct /usr/local/bin/
 # 🛠️ SQLStruct — SQL → Go Struct Generator  
 Konversi otomatis *CREATE TABLE* menjadi struct Golang, lengkap dengan **warna**, **CLI interface**, dan **file picker interaktif**.
 
@@ -42,11 +61,3 @@ type Users struct {
 
 
 
-
-
-## 📦 Instalasi
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/your-username/sqlstruct.git
-cd sqlstruct
