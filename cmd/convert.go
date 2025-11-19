@@ -68,7 +68,7 @@ var convertCmd = &cobra.Command{
 		}
 
 		prompt := promptui.Prompt{
-			Label:     color.GreenString("SQL File Path"),
+			Label:     color.GreenString("SQL File Path (press Enter to browse)"),
 			Validate:  validate,
 			AllowEdit: true,
 		}
