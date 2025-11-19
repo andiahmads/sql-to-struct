@@ -24,7 +24,7 @@ $ sqlstruct convert
 
 SQL File Path (press Enter to browse): ./your-migration-folder
 
-Choose file in ./sql
+? Choose file in ./your-migration-folder:
 > users.sql
   roles.sql
   logs.sql
@@ -39,3 +39,20 @@ type Users struct {
     CreatedAt string `json:"created_at"`
     UpdatedAt string `json:"updated_at"`
 }
+
+
+
+
+---
+
+## 📦 Instalasi
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-username/sqlstruct.git
+cd sqlstruct
+
+
+
+🚀 Cara Menjalankan
+./sqlstruct convert
